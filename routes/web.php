@@ -25,4 +25,10 @@ Route::group([
     // Route for Dashboard page
     Route::get('/', [App\Http\Controllers\HomeController::class, 'index']);
     Route::get('/dashboard', [App\Http\Controllers\HomeController::class, 'index'])->name('dashboard');
+
+    // Route for Profile page
+    Route::get('/profil', [App\Http\Controllers\ProfilController::class, 'index'])->name('profile');
+    Route::post('/profil', [App\Http\Controllers\ProfilController::class, 'save'])->name('profile.save');
+
+
 });
