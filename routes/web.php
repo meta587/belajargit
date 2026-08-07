@@ -31,6 +31,12 @@ Route::group([
     Route::post('/profil', [App\Http\Controllers\ProfilController::class, 'save'])->name('profile.save');
 
      // Route for Admin page
-     
      Route::resource('/admin', App\Http\Controllers\AdminController::class);
+
+     // Route for Employee page
+    Route::resource('/employee', App\Http\Controllers\EmployeeController::class);
+
+
+     // Route for Guest page
+     Route::resource('/guest', App\Http\Controllers\GuestController::class);
 });

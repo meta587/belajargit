@@ -18,12 +18,12 @@
                     <span>Dashboard</span></a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="">
+                <a class="nav-link" href="{{ route('admin.guest.index') }}">
                     <i class="fas fa-fw fa-user-alt"></i>
                     <span>Guest list</span></a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="">
+                <a class="nav-link" href="{{ route('admin.employee.index') }}">
                     <i class="fas fa-fw fa-user-alt"></i>
                     <span>Employee</span></a>
             </li>
