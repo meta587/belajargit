@@ -24,11 +24,11 @@
             </li>
             <li class="nav-item active">
                 <a class="nav-link" href="">
-                    <i class="fas fa-fw fa-user-check-alt"></i>
+                    <i class="fas fa-fw fa-user-alt"></i>
                     <span>Employee</span></a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="">
+                <a class="nav-link" href="{{ route('admin.admin.index') }}">
                     <i class="fas fa-fw fa-user-alt"></i>
                     <span>Admin</span></a>
             </li>

@@ -17,9 +17,11 @@
     <!-- Custom styles for this template-->
     <link href="{{ asset('css/sb-admin-2.min.css') }}" rel="stylesheet">
 
-    @stack('styles')  <!-- ← Tambahan: untuk CSS tambahan per halaman -->
+    @stack('styles')  
     <script src="{{ asset('vendor/jquery/jquery.min.js') }}"></script>
+
 </head>
+
 
 <body id="page-top">
 
@@ -42,7 +44,7 @@
 
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
-                    @yield('content')  <!-- ← HANYA INI, TIDAK ADA KONTEN LAIN! -->
+                    @yield('content')  
                 </div>
                 <!-- /.container-fluid -->
 
@@ -64,7 +66,8 @@
         <i class="fas fa-angle-up"></i>
     </a>
 
-
+    {{-- SweetAlert --}}
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <!-- Bootstrap core JavaScript-->
     
@@ -76,7 +79,8 @@
     <!-- Custom scripts for all pages-->
     <script src="{{ asset('js/sb-admin-2.min.js') }}"></script>
 
-    @stack('scripts')  <!-- ← Tambahan: untuk JS tambahan per halaman -->
+    @stack('scripts')  
+    
 </body>
 
 </html>
